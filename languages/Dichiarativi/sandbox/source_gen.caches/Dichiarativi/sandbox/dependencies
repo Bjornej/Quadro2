@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <uses language="l:7c951c76-8628-4de9-b15b-c69525968b60:Dichiarativi" />
+  <uses module="6f3ecd2a-509b-472c-99b6-b3b8782057bd(Dichiarativi.runtime)" kind="rt" />
+</dependenciesRoot>
+
