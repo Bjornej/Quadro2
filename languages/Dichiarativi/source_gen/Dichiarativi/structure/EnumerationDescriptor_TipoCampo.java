@@ -20,14 +20,18 @@ public class EnumerationDescriptor_TipoCampo extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_N3_0 = new EnumerationDescriptor.MemberDescriptor("N3", "N3", 0x5951c0d36d59af52L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6436137356794376018");
   private final EnumerationDescriptor.MemberDescriptor myMember_N4_0 = new EnumerationDescriptor.MemberDescriptor("N4", "N4", 0x5951c0d36d59af56L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6436137356794376022");
   private final EnumerationDescriptor.MemberDescriptor myMember_NP_0 = new EnumerationDescriptor.MemberDescriptor("NP", "NP", 0x5951c0d36d59af5bL, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6436137356794376027");
-  private final EnumerationDescriptor.MemberDescriptor myMember_NU_0 = new EnumerationDescriptor.MemberDescriptor("NU", "NU", 0x5951c0d36d59af61L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6436137356794376033");
-  private final EnumerationDescriptor.MemberDescriptor myMember_CF_0 = new EnumerationDescriptor.MemberDescriptor("CF", "CF", 0x5951c0d36d59af68L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6436137356794376040");
-  private final EnumerationDescriptor.MemberDescriptor myMember_PI_0 = new EnumerationDescriptor.MemberDescriptor("PI", "PI", 0x5951c0d36d59af70L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6436137356794376048");
-  private final EnumerationDescriptor.MemberDescriptor myMember_DT_0 = new EnumerationDescriptor.MemberDescriptor("DT", "DT", 0x5951c0d36d59af79L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6436137356794376057");
-  private final EnumerationDescriptor.MemberDescriptor myMember_CB_0 = new EnumerationDescriptor.MemberDescriptor("CB", "CB", 0x5951c0d36d59af83L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6436137356794376067");
+  private final EnumerationDescriptor.MemberDescriptor myMember_AN_0 = new EnumerationDescriptor.MemberDescriptor("AN", "AN", 0x54cbbf041ce9ffccL, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6110187343844081612");
+  private final EnumerationDescriptor.MemberDescriptor myMember_CF_0 = new EnumerationDescriptor.MemberDescriptor("CF", "CF", 0x54cbbf041ce9ffd8L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6110187343844081624");
+  private final EnumerationDescriptor.MemberDescriptor myMember_CN_0 = new EnumerationDescriptor.MemberDescriptor("CN", "CN", 0x54cbbf041ce9ffe5L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6110187343844081637");
+  private final EnumerationDescriptor.MemberDescriptor myMember_PI_0 = new EnumerationDescriptor.MemberDescriptor("PI", "PI", 0x54cbbf041ce9fff3L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6110187343844081651");
+  private final EnumerationDescriptor.MemberDescriptor myMember_DT_0 = new EnumerationDescriptor.MemberDescriptor("DT", "DT", 0x54cbbf041cea0002L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6110187343844081666");
+  private final EnumerationDescriptor.MemberDescriptor myMember_NU_0 = new EnumerationDescriptor.MemberDescriptor("NU", "NU", 0x54cbbf041cea0012L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6110187343844081682");
+  private final EnumerationDescriptor.MemberDescriptor myMember_PR_0 = new EnumerationDescriptor.MemberDescriptor("PR", "PR", 0x54cbbf041cea0023L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6110187343844081699");
+  private final EnumerationDescriptor.MemberDescriptor myMember_CB_0 = new EnumerationDescriptor.MemberDescriptor("CB", "CB", 0x54cbbf041cea0035L, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6110187343844081717");
+  private final EnumerationDescriptor.MemberDescriptor myMember_VP_0 = new EnumerationDescriptor.MemberDescriptor("VP", "VP", 0x54cbbf041cea22feL, "r:cd7aa375-efad-498c-b280-38b726242ed0(Dichiarativi.structure)/6110187343844090622");
 
-  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x7c951c7686284de9L, 0xb15bc69525968b60L, 0x5951c0d36d59af4dL, 0x5951c0d36d59af4eL, 0x5951c0d36d59af4fL, 0x5951c0d36d59af52L, 0x5951c0d36d59af56L, 0x5951c0d36d59af5bL, 0x5951c0d36d59af61L, 0x5951c0d36d59af68L, 0x5951c0d36d59af70L, 0x5951c0d36d59af79L, 0x5951c0d36d59af83L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_N1_0, myMember_N2_0, myMember_N3_0, myMember_N4_0, myMember_NP_0, myMember_NU_0, myMember_CF_0, myMember_PI_0, myMember_DT_0, myMember_CB_0);
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x7c951c7686284de9L, 0xb15bc69525968b60L, 0x5951c0d36d59af4dL, 0x5951c0d36d59af4eL, 0x5951c0d36d59af4fL, 0x5951c0d36d59af52L, 0x5951c0d36d59af56L, 0x5951c0d36d59af5bL, 0x54cbbf041ce9ffccL, 0x54cbbf041ce9ffd8L, 0x54cbbf041ce9ffe5L, 0x54cbbf041ce9fff3L, 0x54cbbf041cea0002L, 0x54cbbf041cea0012L, 0x54cbbf041cea0023L, 0x54cbbf041cea0035L, 0x54cbbf041cea22feL);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_N1_0, myMember_N2_0, myMember_N3_0, myMember_N4_0, myMember_NP_0, myMember_AN_0, myMember_CF_0, myMember_CN_0, myMember_PI_0, myMember_DT_0, myMember_NU_0, myMember_PR_0, myMember_CB_0, myMember_VP_0);
 
   @Nullable
   @Override
@@ -58,16 +62,24 @@ public class EnumerationDescriptor_TipoCampo extends EnumerationDescriptorBase {
         return myMember_N4_0;
       case "NP":
         return myMember_NP_0;
-      case "NU":
-        return myMember_NU_0;
+      case "AN":
+        return myMember_AN_0;
       case "CF":
         return myMember_CF_0;
+      case "CN":
+        return myMember_CN_0;
       case "PI":
         return myMember_PI_0;
       case "DT":
         return myMember_DT_0;
+      case "NU":
+        return myMember_NU_0;
+      case "PR":
+        return myMember_PR_0;
       case "CB":
         return myMember_CB_0;
+      case "VP":
+        return myMember_VP_0;
     }
     return null;
   }

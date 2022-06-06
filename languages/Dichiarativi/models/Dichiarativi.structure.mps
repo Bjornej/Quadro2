@@ -22,13 +22,18 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -53,6 +58,7 @@
     <property role="TrG5h" value="Quadro" />
     <property role="R4oN_" value="Quadro" />
     <property role="34LRSv" value="Quadro" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="5_hKddHmqwf" role="1TKVEl">
       <property role="IQ2nx" value="6436137356794374159" />
@@ -70,6 +76,9 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="20kJfa" value="Campi" />
       <ref role="20lvS9" node="5_hKddHmqX7" resolve="Campo" />
+    </node>
+    <node concept="PrWs8" id="5jbJKgsUvkE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="5_hKddHmqwh">
@@ -89,7 +98,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="quadri" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="5_hKddHmqvq" resolve="Quadro" />
+      <ref role="20lvS9" node="5jbJKgsUvkN" resolve="QuadroReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="5_hKddHmqX7">
@@ -97,12 +106,8 @@
     <property role="TrG5h" value="Campo" />
     <property role="34LRSv" value="campo" />
     <property role="R4oN_" value="campo" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyi" id="5_hKddHmqX8" role="1TKVEl">
-      <property role="IQ2nx" value="6436137356794376008" />
-      <property role="TrG5h" value="codice" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="5_hKddHmqXa" role="1TKVEl">
       <property role="IQ2nx" value="6436137356794376010" />
       <property role="TrG5h" value="tipo" />
@@ -137,25 +142,41 @@
       <property role="3tVfz5" value="6436137356794376027" />
       <property role="TrG5h" value="NP" />
     </node>
-    <node concept="25R33" id="5_hKddHmqXx" role="25R1y">
-      <property role="3tVfz5" value="6436137356794376033" />
-      <property role="TrG5h" value="NU" />
+    <node concept="25R33" id="5jbJKgsUvZc" role="25R1y">
+      <property role="3tVfz5" value="6110187343844081612" />
+      <property role="TrG5h" value="AN" />
     </node>
-    <node concept="25R33" id="5_hKddHmqXC" role="25R1y">
-      <property role="3tVfz5" value="6436137356794376040" />
+    <node concept="25R33" id="5jbJKgsUvZo" role="25R1y">
+      <property role="3tVfz5" value="6110187343844081624" />
       <property role="TrG5h" value="CF" />
     </node>
-    <node concept="25R33" id="5_hKddHmqXK" role="25R1y">
-      <property role="3tVfz5" value="6436137356794376048" />
+    <node concept="25R33" id="5jbJKgsUvZ_" role="25R1y">
+      <property role="3tVfz5" value="6110187343844081637" />
+      <property role="TrG5h" value="CN" />
+    </node>
+    <node concept="25R33" id="5jbJKgsUvZN" role="25R1y">
+      <property role="3tVfz5" value="6110187343844081651" />
       <property role="TrG5h" value="PI" />
     </node>
-    <node concept="25R33" id="5_hKddHmqXT" role="25R1y">
-      <property role="3tVfz5" value="6436137356794376057" />
+    <node concept="25R33" id="5jbJKgsUw02" role="25R1y">
+      <property role="3tVfz5" value="6110187343844081666" />
       <property role="TrG5h" value="DT" />
     </node>
-    <node concept="25R33" id="5_hKddHmqY3" role="25R1y">
-      <property role="3tVfz5" value="6436137356794376067" />
+    <node concept="25R33" id="5jbJKgsUw0i" role="25R1y">
+      <property role="3tVfz5" value="6110187343844081682" />
+      <property role="TrG5h" value="NU" />
+    </node>
+    <node concept="25R33" id="5jbJKgsUw0z" role="25R1y">
+      <property role="3tVfz5" value="6110187343844081699" />
+      <property role="TrG5h" value="PR" />
+    </node>
+    <node concept="25R33" id="5jbJKgsUw0P" role="25R1y">
+      <property role="3tVfz5" value="6110187343844081717" />
       <property role="TrG5h" value="CB" />
+    </node>
+    <node concept="25R33" id="5jbJKgsUybY" role="25R1y">
+      <property role="3tVfz5" value="6110187343844090622" />
+      <property role="TrG5h" value="VP" />
     </node>
   </node>
   <node concept="25R3W" id="5_hKddHmreP">
@@ -172,6 +193,50 @@
     <node concept="25R33" id="5_hKddHmreU" role="25R1y">
       <property role="3tVfz5" value="6436137356794377146" />
       <property role="TrG5h" value="Manuale" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5jbJKgsUvkN">
+    <property role="EcuMT" value="6110187343844078899" />
+    <property role="TrG5h" value="QuadroReference" />
+    <property role="34LRSv" value="quadro" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="5jbJKgsUvkO" role="1TKVEi">
+      <property role="IQ2ns" value="6110187343844078900" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="Refers" />
+      <ref role="20lvS9" node="5_hKddHmqvq" resolve="Quadro" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5jbJKgsUwJl">
+    <property role="EcuMT" value="6110187343844084693" />
+    <property role="TrG5h" value="CampoPosizionale" />
+    <property role="34LRSv" value="campoP" />
+    <ref role="1TJDcQ" node="5_hKddHmqX7" resolve="Campo" />
+    <node concept="1TJgyi" id="5jbJKgsUwJm" role="1TKVEl">
+      <property role="IQ2nx" value="6110187343844084694" />
+      <property role="TrG5h" value="nome" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5jbJKgsUwJp" role="1TKVEl">
+      <property role="IQ2nx" value="6110187343844084697" />
+      <property role="TrG5h" value="posizione" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5jbJKgsUwJq" role="1TKVEl">
+      <property role="IQ2nx" value="6110187343844084698" />
+      <property role="TrG5h" value="lunghezza" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5jbJKgsUwJB">
+    <property role="EcuMT" value="6110187343844084711" />
+    <property role="TrG5h" value="CampoNonPosizionale" />
+    <property role="34LRSv" value="campoN" />
+    <ref role="1TJDcQ" node="5_hKddHmqX7" resolve="Campo" />
+    <node concept="1TJgyi" id="5jbJKgsUwK4" role="1TKVEl">
+      <property role="IQ2nx" value="6110187343844084740" />
+      <property role="TrG5h" value="codice" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

@@ -10,8 +10,11 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Campo;
+  private ConceptPresentation props_CampoNonPosizionale;
+  private ConceptPresentation props_CampoPosizionale;
   private ConceptPresentation props_Dichiarazione;
   private ConceptPresentation props_Quadro;
+  private ConceptPresentation props_QuadroReference;
 
   @Override
   @Nullable
@@ -22,10 +25,23 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Campo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("campo");
-          cpb.rawPresentation("campo");
           props_Campo = cpb.create();
         }
         return props_Campo;
+      case LanguageConceptSwitch.CampoNonPosizionale:
+        if (props_CampoNonPosizionale == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("campoN");
+          props_CampoNonPosizionale = cpb.create();
+        }
+        return props_CampoNonPosizionale;
+      case LanguageConceptSwitch.CampoPosizionale:
+        if (props_CampoPosizionale == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("campoP");
+          props_CampoPosizionale = cpb.create();
+        }
+        return props_CampoPosizionale;
       case LanguageConceptSwitch.Dichiarazione:
         if (props_Dichiarazione == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -38,10 +54,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Quadro == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Quadro");
-          cpb.rawPresentation("Quadro");
+          cpb.presentationByName();
           props_Quadro = cpb.create();
         }
         return props_Quadro;
+      case LanguageConceptSwitch.QuadroReference:
+        if (props_QuadroReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("quadro");
+          props_QuadroReference = cpb.create();
+        }
+        return props_QuadroReference;
     }
     return null;
   }
